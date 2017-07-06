@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 
 
 class ListContacts extends Component {
+    static propTypes = {
+        contacts: PropTypes.array.isRequired,
+        onDeleteContact: PropTypes.func.isRequired
+    }
     render() {
         return (
             <ol className='contact-list'> 
@@ -30,10 +34,5 @@ class ListContacts extends Component {
     }
 
 }
-
-ListContacts.propTypes = {
-    contacts: PropTypes.array.isRequired,
-    onDeleteContact: PropTypes.func.isRequired
-};
 
 export default ListContacts;
