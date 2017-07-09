@@ -1,5 +1,6 @@
 {
     "root" : true,
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es6": true,
@@ -11,6 +12,7 @@
         "plugin:react/recommended"
     ],
     "parserOptions": {
+        "ecmaVersion": 6,
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
             "jsx": true
@@ -21,11 +23,10 @@
         "react"
     ],
     "rules": {
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "strict":"error"
     }
 }
